@@ -14,7 +14,7 @@ module tb_nocache;
 
     integer start_time, end_time;
 
-    // ✅ Stall cycle counter
+    // Stall cycle counter
     reg [31:0] stall_cycles = 0;
 
     // Count stall cycles (CPU waiting for memory)

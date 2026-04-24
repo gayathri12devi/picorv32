@@ -15,7 +15,7 @@ module simple_memory (
 
     always @(posedge clk) begin
         if (mem_valid) begin
-            if (delay < 8) begin   // 🔥 increase latency here
+            if (delay < 8) begin   // increase latency here
                 delay <= delay + 1;
                 mem_ready <= 0;
             end else begin
